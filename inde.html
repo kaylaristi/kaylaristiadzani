@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Life & Self Development</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #333;
+    line-height: 1.7;
+}
+
+header {
+    background: #243b64;
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+nav {
+    background: white;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+nav a {
+    text-decoration: none;
+    color: #243b64;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.intro {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.intro h2 {
+    color: #243b64;
+    margin-bottom: 10px;
+}
+
+.posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.label {
+    display: inline-block;
+    background: #e7edf8;
+    color: #243b64;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #243b64;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+.read {
+    color: #243b64;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.about {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 35px;
+}
+
+.about h2 {
+    color: #243b64;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #243b64;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+@media (max-width: 700px) {
+    .posts {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Student Life & Self Development</h1>
+    <p>Grow • Learn • Inspire</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#articles">Articles</a>
+    <a href="#about">About</a>
+</nav>
+
+<div class="container" id="home">
+
+    <section class="intro">
+        <h2>Welcome to Student Life!</h2>
+        <p>
+            Blog ini membahas berbagai hal yang berkaitan dengan kehidupan
+            mahasiswa, mulai dari manajemen waktu, cara belajar,
+            keseimbangan hidup, hingga pengembangan diri.
+        </p>
+    </section>
+
+    <section id="articles">
+        <div class="posts">
+
+            <!-- ARTIKEL 1 -->
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=800&q=80">
+
+                <div class="card-content">
+                    <span class="label">Productivity</span>
+
+                    <h3>Tips Mengatur Waktu sebagai Mahasiswa</h3>
+
+                    <p>
+                        Mengatur waktu merupakan salah satu kemampuan penting
+                        bagi mahasiswa. Dengan jadwal yang teratur, kegiatan
+                        kuliah, organisasi, tugas, dan waktu istirahat dapat
+                        berjalan dengan lebih seimbang.
+                    </p>
+
+                    <a class="read" href="#">Baca selengkapnya →</a>
+                </div>
+            </article>
+
+
+            <!-- ARTIKEL 2 -->
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80">
+
+                <div class="card-content">
+                    <span class="label">Education</span>
+
+                    <h3>Cara Belajar Efektif di Tengah Kesibukan Kuliah</h3>
+
+                    <p>
+                        Kesibukan mahasiswa sering membuat waktu belajar
+                        menjadi terbatas. Karena itu, diperlukan strategi
+                        belajar yang efektif seperti membuat jadwal,
+                        menentukan prioritas, dan menghindari gangguan.
+                    </p>
+
+                    <a class="read" href="#">Baca selengkapnya →</a>
+                </div>
+            </article>
+
+
+            <!-- ARTIKEL 3 -->
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=800&q=80">
+
+                <div class="card-content">
+                    <span class="label">Student Life</span>
+
+                    <h3>Menjaga Keseimbangan Kuliah dan Istirahat</h3>
+
+                    <p>
+                        Mahasiswa tidak hanya membutuhkan waktu untuk belajar.
+                        Istirahat yang cukup juga penting agar tubuh dan pikiran
+                        tetap siap menjalani berbagai aktivitas akademik maupun
+                        nonakademik.
+                    </p>
+
+                    <a class="read" href="#">Baca selengkapnya →</a>
+                </div>
+            </article>
+
+
+            <!-- ARTIKEL 4 -->
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=800&q=80">
+
+                <div class="card-content">
+                    <span class="label">Self Development</span>
+
+                    <h3>Cara Meningkatkan Produktivitas Mahasiswa</h3>
+
+                    <p>
+                        Produktivitas bukan berarti harus melakukan banyak
+                        kegiatan sekaligus. Produktivitas dapat dimulai dari
+                        menentukan tujuan, membuat prioritas, dan menyelesaikan
+                        tugas secara konsisten.
+                    </p>
+
+                    <a class="read" href="#">Baca selengkapnya →</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <h2>Tentang Blog</h2>
+
+        <p>
+            Student Life & Self Development merupakan blog yang membahas
+            kehidupan mahasiswa dan pengembangan diri. Blog ini dibuat sebagai
+            media berbagi informasi mengenai produktivitas, pendidikan,
+            manajemen waktu, dan keseimbangan kehidupan mahasiswa.
+        </p>
+
+        <br>
+
+        <h2>Manfaat untuk Bisnis</h2>
+
+        <p>
+            Blog ini dapat dimanfaatkan oleh organisasi atau perusahaan yang
+            bergerak dalam bidang pendidikan, pelatihan, pengembangan sumber
+            daya manusia, dan layanan mahasiswa. Blog dapat digunakan sebagai
+            media informasi, komunikasi dengan pembaca, serta media untuk
+            memperkenalkan program atau layanan organisasi.
+        </p>
+
+        <br>
+
+        <h2>Tools yang Mendukung Bisnis</h2>
+
+        <p>
+            Beberapa fitur yang dapat mendukung penggunaan blog untuk bisnis
+            antara lain halaman artikel, kategori atau label, gambar,
+            navigasi halaman, komentar, statistik pengunjung, dan
+            integrasi dengan berbagai layanan digital.
+        </p>
+
+    </section>
+
+</div>
+
+
+<footer>
+    <p>© 2026 Student Life & Self Development</p>
+    <p>Created for Academic Assignment</p>
+</footer>
+
+</body>
+</html>
